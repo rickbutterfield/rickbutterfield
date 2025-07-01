@@ -1,13 +1,14 @@
 {
   "type": "umbraco",
-  "background": "#ffffff",
-  "foreground": "#d886f1",
-  "style": "diamond",
-  "leading_diamond": "",
-  "trailing_diamond": "",
-  "template": "󰕉 {{ .Version }}",
+  "template": " \udb81\udd49 {{ .Version }} ",
+  "powerline_symbol": "\ue0b0",
+  "style": "powerline",
   "background_templates": [
     "{{ if (.Modern) }}#3544B1{{ end }}",
     "{{ if not (.Modern) }}#F79C37{{ end }}"
+  ],
+  "foreground_templates": [
+    "{{ if (.Modern) }}#ffffff{{ end }}",
+    "{{ if not (.Modern) }}#000000{{ end }}"
   ]
-}
+},
